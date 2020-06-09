@@ -73,12 +73,6 @@ public class DBUtil implements ApplicationRunner
         user.setCity(zipAndCityArr[1]);
     }
 
-	/*
-	 * private String getCity(String[] cityArr) { StringBuilder city = new
-	 * StringBuilder(); for (int i = 1; i < cityArr.length; i++) {
-	 * city.append(cityArr[i]); } return city.toString(); }
-	 */
-
     private Color getColor(String color_id)
     {
         Color color = new Color();
