@@ -64,8 +64,8 @@
 			<artifactId>springfox-swagger2</artifactId>
 			<version>${springfox-swagger.version}</version>
 		</dependency>
-
-		<dependency>
+		<!--The behaviour getter,setter -->
+        <dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<scope>compile</scope>

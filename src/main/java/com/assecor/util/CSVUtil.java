@@ -29,22 +29,18 @@ public class CSVUtil
                 String[] values = line.split(DELIMITER_COMMA);
                 if (values.length != 4)
                 {
-                	
-                	//records.addAll(extractRecordsFromSingleLine(values));
                 	if(values[1].matches("[0-9]+") && values[1].length() == 1)
                 	{
                 		improperValue[2] = values[0];
                 		improperValue[3] = values[1];
                 		records.add(asList(improperValue).stream()
                                 .map(String::trim)
-                                .collect(toList()));
-                		
+                                .collect(toList()));	
                 	}
                 	else {
                 	improperValue[0] = values[0];
                 	improperValue[1] = values[1];
                 	}
-
                 }
                 else
                 {
@@ -54,7 +50,6 @@ public class CSVUtil
                 }
             }
         }
-
         return records;
     }
 
